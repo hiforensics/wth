@@ -18,7 +18,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cuhsat/what-the-hash/pkg/wth"
+	"github.com/hiforensics/wth/pkg/wth"
 )
 
 const banner = `
