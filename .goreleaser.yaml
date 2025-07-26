@@ -23,10 +23,6 @@ builds:
 
 archives:
   - formats: [tar.gz]
-    name_template: >-
-      {{ .ProjectName }}
-      {{ .Os }}
-      {{ .Arch }}
     format_overrides:
       - goos: windows
         formats: [zip]
