@@ -24,9 +24,9 @@ builds:
 archives:
   - formats: [tar.gz]
     name_template: >-
-      {{ .ProjectName }}_
-      {{ Os }}_
-      {{ Arch }}
+      {{ .ProjectName }}
+      {{ .Os }}
+      {{ .Arch }}
     format_overrides:
       - goos: windows
         formats: [zip]
