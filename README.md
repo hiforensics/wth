@@ -10,7 +10,12 @@
 go install github.com/hiforensics/wth@latest
 ```
 
-# Algorithms
+## Usage
+```console
+$ wth HASHSUM
+```
+
+## Algorithms
 ```
 1Password(Agile Keychain)
 1Password(Cloud Keychain)
@@ -285,5 +290,5 @@ xt:Commerce
 ZipMonster 
 ```
 
-# License
+## License
 Released under the [MIT License](LICENSE.md).
