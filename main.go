@@ -10,7 +10,7 @@
 // The arguments are:
 //
 //	hashsum
-//		Hash sum to find all possible sources for (required).
+//	    Hash sum to find all possible sources for (required).
 package main
 
 import (
@@ -21,22 +21,13 @@ import (
 	"github.com/hiforensics/wth/pkg/wth"
 )
 
-const banner = `
-░█░█░█░█░█▀█░▀█▀░░░▀█▀░█░█░█▀▀░░░█░█░█▀█░█▀▀░█░█░█░▀▀█
-░█▄█░█▀█░█▀█░░█░░░░░█░░█▀█░█▀▀░░░█▀█░█▀█░▀▀█░█▀█░▀░░▀░
-░▀░▀░▀░▀░▀░▀░░▀░░░░░▀░░▀░▀░▀▀▀░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░░▀░
-
-`
-
 func main() {
 	if len(os.Args) == 1 || os.Args[1] == "-h" || os.Args[1] == "--help" {
 		fmt.Fprintln(os.Stderr, "usage: wth HASHSUM")
 		os.Exit(2)
 	}
 
-	fmt.Print(banner)
-
-	ch := make(chan string, len(wth.DB))
+	ch := make(chan string)
 
 	go wth.Search([]byte(strings.ToLower(os.Args[1])), ch)
 

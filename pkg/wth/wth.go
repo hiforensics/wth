@@ -9,7 +9,7 @@ import (
 // The internal database of the hash regex patterns.
 //
 // Source: https://github.com/s0md3v/Bolt/blob/master/db/hashes.json
-var DB = []struct {
+var database = []struct {
 	Regex string
 	Algos []string
 }{
@@ -1016,7 +1016,7 @@ var DB = []struct {
 //
 // The given channel will be closed at the end of the operation.
 func Search(b []byte, ch chan<- string) {
-	for _, e := range DB {
+	for _, e := range database {
 		re := regexp.MustCompile(e.Regex)
 
 		if re.Match(b) {
