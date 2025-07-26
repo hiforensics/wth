@@ -7,7 +7,7 @@ import (
 )
 
 func Example() {
-	ch := make(chan string, len(DB))
+	ch := make(chan string)
 
 	go Search([]byte("1234567890abcd"), ch)
 
@@ -75,7 +75,7 @@ func TestSearch(t *testing.T) {
 		},
 	} {
 		t.Run("Test Search with "+tt.name, func(t *testing.T) {
-			ch := make(chan string, len(DB))
+			ch := make(chan string)
 
 			Search([]byte(tt.hash), ch)
 
@@ -93,7 +93,7 @@ func TestSearch(t *testing.T) {
 func BenchmarkSearch(b *testing.B) {
 	b.Run("Benchmark Search", func(b *testing.B) {
 		for n := 0; n < b.N; n++ {
-			Search([]byte(""), make(chan string, len(DB)))
+			Search([]byte(""), make(chan string))
 		}
 	})
 }
