@@ -1,8 +1,8 @@
 # What the Hash!?
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/cuhsat/what-the-hash.svg)](https://pkg.go.dev/github.com/cuhsat/what-the-hash)
-[![Go Report Card](https://goreportcard.com/badge/github.com/cuhsat/what-the-hash?style=flat-square)](https://goreportcard.com/report/github.com/cuhsat/what-the-hash)
-[![Release](https://img.shields.io/github/release/cuhsat/what-the-hash.svg?style=flat-square)](https://github.com/cuhsat/what-the-hash/releases/latest)
+[![Go Reference](https://pkg.go.dev/badge/github.com/hiforensics/wth.svg)](https://pkg.go.dev/github.com/hiforensics/wth)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hiforensics/wth?style=flat-square)](https://goreportcard.com/report/github.com/hiforensics/wth)
+[![Release](https://img.shields.io/github/release/hiforensics/wth.svg?style=flat-square)](https://github.com/hiforensics/wth/releases/latest)
 
 **What the Hash!?** is a simple hash reverse lookup. It searches a database of [270+](https://github.com/s0md3v/Bolt/blob/master/db/hashes.json) hash algorithms for the possible source of the given hash sum and outputs all found matches in [hashcat](https://hashcat.net/hashcat/) notation.
 
