@@ -18,7 +18,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hiforensics/wth/pkg/wth"
+	"github.com/cuhsat/wth/pkg/wth"
 )
 
 func main() {

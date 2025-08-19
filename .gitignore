@@ -22,3 +22,6 @@ go.work
 
 # Binary files
 bin/
+
+# MacOS crap
+.DS_Store

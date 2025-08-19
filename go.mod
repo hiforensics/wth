@@ -1,3 +1,3 @@
-module github.com/hiforensics/wth
+module github.com/cuhsat/wth
 
 go 1.24
